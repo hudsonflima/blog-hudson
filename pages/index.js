@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout, { GradientBackground } from '../components/Layout';
-import {SiMicrosoftsqlserver, SiMysql, SiMongodb, SiHtml5, SiCss3, SiDotnet, SiReact, SiTailwindcss} from 'react-icons/si'
+import {SiMicrosoftsqlserver, SiMysql, SiMongodb, SiHtml5, SiCss3, SiDotnet, SiReact, SiTailwindcss, SiOracle} from 'react-icons/si'
 import {BiLogoPostgresql, BiLogoJavascript} from 'react-icons/bi'
 import {FaNode} from 'react-icons/fa'
 import { getGlobalData } from '../utils/global-data';
@@ -51,14 +51,8 @@ export default function Index({ posts, globalData }) {
           <SiMicrosoftsqlserver size={50} color='' title='Microsoft SQL Server'/>
           <SiMysql size={70} title='MySQL'/>
           <BiLogoPostgresql size={50} color='#336791' title='PostgreSQL'/>
-          <SiMongodb size={50} color='#12924f' title='MongoDB'/>
-          <Image 
-            src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg"
-            width={150}
-            height={150}
-            alt='Oracle Database'
-            title='Oracle Database'
-          />
+          <SiMongodb size={50} color='#12924f' title='MongoDB'/>SiOracle
+          <SiOracle size={50} color='#12924f' title='Oracle Database'/>
         </div>
         <br />
         <div className='text-3xl font-extralight'>Projetos</div>
