@@ -1,0 +1,54 @@
+.colorBackground,
+.colorBackgroundBottom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ajustado para ocupar toda a largura da tela */
+  height: 100vh; /* Ajustado para ocupar toda a altura da tela */
+  overflow: hidden;
+}
+
+@keyframes rotateGradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.colorBackground::before,
+.colorBackgroundBottom::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+      at 71% 77%,
+      var(--color-gradient-1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 36% 47%, var(--color-gradient-3) 0, transparent 50%),
+    radial-gradient(at 54% 29%, var(--color-gradient-3) 0, transparent 28%),
+    radial-gradient(at 45% 51%, var(--color-gradient-1) 0, transparent 53%),
+    radial-gradient(at 73% 44%, var(--color-gradient-2) 0, transparent 54%),
+    radial-gradient(at 24% 7%, var(--color-gradient-2) 0, transparent 40%),
+    radial-gradient(at 76% 46%, var(--color-gradient-1) 0, transparent 50%);
+  animation: rotateGradient 20s linear infinite;
+}
+
+.colorBackgroundBottom::before {
+  transform: rotate(360deg);
+}
+
+.colorBackground,
+.colorBackgroundBottom {
+  /* mix-blend-mode: normal; */
+  filter: blur(60px);
+  z-index: -1;
+}
+
+/* Restante do seu CSS ... */
