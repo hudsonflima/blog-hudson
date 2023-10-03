@@ -51,8 +51,8 @@ export default function Index({ posts, globalData }) {
           <SiMicrosoftsqlserver size={50} color='' title='Microsoft SQL Server'/>
           <SiMysql size={70} title='MySQL'/>
           <BiLogoPostgresql size={50} color='#336791' title='PostgreSQL'/>
-          <SiMongodb size={50} color='#12924f' title='MongoDB'/>SiOracle
-          <SiOracle size={50} color='#12924f' title='Oracle Database'/>
+          <SiMongodb size={50} color='#12924f' title='MongoDB'/>
+          <SiOracle size={50} color='#E32124' title='Oracle Database'/>
         </div>
         <br />
         <div className='text-3xl font-extralight'>Projetos</div>
