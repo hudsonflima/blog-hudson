@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { getPosts } from '../utils/mdx-utils';
 import Head from 'next/head';
-import Image from 'next/image';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout, { GradientBackground } from '../components/Layout';
@@ -40,13 +39,13 @@ export default function Index({ posts, globalData }) {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4 sm:mt-8 md:mt-12 lg:mt-16">
           {/* Ícones de tecnologia */}
-          <FaNode size={50} color='lightgreen' title='Node.js' className=' transform transition-transform hover:scale-150'/>
-          <BiLogoJavascript size={50} color='yellow' title='Javascript' className=' transform transition-transform hover:scale-150'/>
-          <SiHtml5 size={50} color='#EF652A' title='HTML5' className=' transform transition-transform hover:scale-150'/>
-          <SiCss3 size={50} color='#2965f1' title='CSS3' className=' transform transition-transform hover:scale-150'/>
-          <SiReact size={50} color='#2ff9ff' title='React.js' className=' transform transition-transform hover:scale-150'/>
-          <SiDotnet size={50} color='gray' title='Microsoft .NET' className=' transform transition-transform hover:scale-150'/>
-          <SiTailwindcss size={50} color='cyan' title='Tailwind CSS' className=' transform transition-transform hover:scale-150'/>
+          <FaNode size={50} color='lightgreen' title='Node.js' className=' transform transition-transform hover:scale-150 duration-700 '/>
+          <BiLogoJavascript size={50} color='yellow' title='Javascript' className=' transform transition-transform hover:scale-150 duration-700 '/>
+          <SiHtml5 size={50} color='#EF652A' title='HTML5' className=' transform transition-transform hover:scale-150 duration-700 '/>
+          <SiCss3 size={50} color='#2965f1' title='CSS3' className=' transform transition-transform hover:scale-150 duration-700 '/>
+          <SiReact size={50} color='#2ff9ff' title='React.js' className=' transform transition-transform hover:scale-150 duration-700 '/>
+          <SiDotnet size={50} color='gray' title='Microsoft .NET' className=' transform transition-transform hover:scale-150 duration-700 '/>
+          <SiTailwindcss size={50} color='cyan' title='Tailwind CSS' className=' transform transition-transform hover:scale-150 duration-700 '/>
         </div>
 
         <div className="text-3xl font-extralight sm:mt-8 md:mt-12 lg:mt-16">
@@ -55,11 +54,11 @@ export default function Index({ posts, globalData }) {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4 sm:mt-8 md:mt-12 lg:mt-16">
           {/* Ícones de integração */}
-          <SiMicrosoftsqlserver size={50} color='' title='Microsoft SQL Server' className=' transform transition-transform hover:scale-150'/>
-          <SiMysql size={70} title='MySQL' className=' transform transition-transform hover:scale-150' />
-          <BiLogoPostgresql size={50} color='#336791' title='PostgreSQL' className=' transform transition-transform hover:scale-150'/>
-          <SiMongodb size={50} color='#12924f' title='MongoDB' className=' transform transition-transform hover:scale-150'/>
-          <SiOracle size={50} color='#E32124' title='Oracle Database' className=' transform transition-transform hover:scale-150'/>
+          <SiMicrosoftsqlserver size={50} color='' title='Microsoft SQL Server' className=' transform transition-transform hover:scale-150 duration-700'/>
+          <SiMysql size={70} title='MySQL' className=' transform transition-transform hover:scale-150 duration-700' />
+          <BiLogoPostgresql size={50} color='#336791' title='PostgreSQL' className=' transform transition-transform hover:scale-150 duration-700'/>
+          <SiMongodb size={50} color='#12924f' title='MongoDB' className=' transform transition-transform hover:scale-150 duration-700'/>
+          <SiOracle size={50} color='#E32124' title='Oracle Database' className=' transform transition-transform hover:scale-150 duration-700'/>
         </div>
         <br />
         <div className="text-3xl font-extralight sm:mt-8 md:mt-12 lg:mt-16">
@@ -68,7 +67,7 @@ export default function Index({ posts, globalData }) {
         <br />
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-4 sm:mt-8 md:mt-12 lg:mt-16 xs:p-10">
           {portfolioItems.map((item, index) => (
-            <div key={index} className="max-w-xs transform transition-transform hover:border-b-2 border-b-2 border-green-800 opacity-70 hover:opacity-100 hover:border-green-500 hover:scale-125 hover:shadow-sm ">
+            <div key={index} className="max-w-xs transform transition-transform hover:border-b-2 border-b-2 border-green-800 opacity-70 hover:opacity-100 hover:border-green-500 hover:scale-125 hover:shadow-sm duration-700">
               <h2 className="text-xl text-slate-900 dark:text-slate-200 font-bold mb-2">{item.title}</h2>
               <p className="text-gray-700 dark:text-gray-200 ">{item.description}</p>
               <Link href={item.link}>
