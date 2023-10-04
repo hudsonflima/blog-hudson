@@ -40,13 +40,13 @@ export default function Index({ posts, globalData }) {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4 sm:mt-8 md:mt-12 lg:mt-16">
           {/* Ícones de tecnologia */}
-          <FaNode size={50} color='lightgreen' title='Node.js' />
-          <BiLogoJavascript size={50} color='yellow' title='Javascript' />
-          <SiHtml5 size={50} color='#EF652A' title='HTML5' />
-          <SiCss3 size={50} color='#2965f1' title='CSS3' />
-          <SiReact size={50} color='#2ff9ff' title='React.js' />
-          <SiDotnet size={50} color='gray' title='Microsoft .NET' />
-          <SiTailwindcss size={50} color='cyan' title='Tailwind CSS' />
+          <FaNode size={50} color='lightgreen' title='Node.js' className=' transform transition-transform hover:scale-150'/>
+          <BiLogoJavascript size={50} color='yellow' title='Javascript' className=' transform transition-transform hover:scale-150'/>
+          <SiHtml5 size={50} color='#EF652A' title='HTML5' className=' transform transition-transform hover:scale-150'/>
+          <SiCss3 size={50} color='#2965f1' title='CSS3' className=' transform transition-transform hover:scale-150'/>
+          <SiReact size={50} color='#2ff9ff' title='React.js' className=' transform transition-transform hover:scale-150'/>
+          <SiDotnet size={50} color='gray' title='Microsoft .NET' className=' transform transition-transform hover:scale-150'/>
+          <SiTailwindcss size={50} color='cyan' title='Tailwind CSS' className=' transform transition-transform hover:scale-150'/>
         </div>
 
         <div className="text-3xl font-extralight sm:mt-8 md:mt-12 lg:mt-16">
@@ -55,11 +55,11 @@ export default function Index({ posts, globalData }) {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4 sm:mt-8 md:mt-12 lg:mt-16">
           {/* Ícones de integração */}
-          <SiMicrosoftsqlserver size={50} color='' title='Microsoft SQL Server' />
-          <SiMysql size={70} title='MySQL' />
-          <BiLogoPostgresql size={50} color='#336791' title='PostgreSQL' />
-          <SiMongodb size={50} color='#12924f' title='MongoDB' />
-          <SiOracle size={50} color='#E32124' title='Oracle Database' />
+          <SiMicrosoftsqlserver size={50} color='' title='Microsoft SQL Server' className=' transform transition-transform hover:scale-150'/>
+          <SiMysql size={70} title='MySQL' className=' transform transition-transform hover:scale-150' />
+          <BiLogoPostgresql size={50} color='#336791' title='PostgreSQL' className=' transform transition-transform hover:scale-150'/>
+          <SiMongodb size={50} color='#12924f' title='MongoDB' className=' transform transition-transform hover:scale-150'/>
+          <SiOracle size={50} color='#E32124' title='Oracle Database' className=' transform transition-transform hover:scale-150'/>
         </div>
         <br />
         <div className="text-3xl font-extralight sm:mt-8 md:mt-12 lg:mt-16">
@@ -70,7 +70,7 @@ export default function Index({ posts, globalData }) {
           {portfolioItems.map((item, index) => (
             <div key={index} className="max-w-xs transform transition-transform hover:border-b-2 border-b-2 border-green-800 opacity-70 hover:opacity-100 hover:border-green-500 hover:scale-125 hover:shadow-sm ">
               <h2 className="text-xl text-slate-900 dark:text-slate-200 font-bold mb-2">{item.title}</h2>
-              <p className="text-gray-700 dark:text-gray-200">{item.description}</p>
+              <p className="text-gray-700 dark:text-gray-200 ">{item.description}</p>
               <Link href={item.link}>
                 <a className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-all" target='_blank'>Ver mais</a>
               </Link>
