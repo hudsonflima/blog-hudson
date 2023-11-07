@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Layout, { GradientBackground } from '../components/Layout';
 import { SiMicrosoftsqlserver, SiMysql, SiMongodb, SiHtml5, SiCss3, SiDotnet, SiReact, SiTailwindcss, SiOracle } from 'react-icons/si'
 import { BiLogoPostgresql, BiLogoJavascript } from 'react-icons/bi'
+import { FcGoogle } from 'react-icons/fc'
 import { FaNode } from 'react-icons/fa'
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
@@ -46,6 +47,7 @@ export default function Index({ posts, globalData }) {
           <SiReact size={50} color='#2ff9ff' title='React.js' className=' transform transition-transform hover:scale-150 duration-700 '/>
           <SiDotnet size={50} color='gray' title='Microsoft .NET' className=' transform transition-transform hover:scale-150 duration-700 '/>
           <SiTailwindcss size={50} color='cyan' title='Tailwind CSS' className=' transform transition-transform hover:scale-150 duration-700 '/>
+          <FcGoogle size={50} title='Google Suite' className=' transform transition-transform hover:scale-150 duration-700 '/>
         </div>
 
         <div className="text-3xl font-extralight sm:mt-8 md:mt-12 lg:mt-16">
